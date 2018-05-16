@@ -1,7 +1,7 @@
-defmodule YtsrStatus.Web.StatusView do  
+defmodule YtsrStatus.Web.StatusView do
   use YtsrStatus.Web, :view
 
-   def render("index.json", %{distributions: distributions}) do
+  def render("index.json", %{distributions: distributions}) do
     %{
       distributions: distributions,
       total: total
